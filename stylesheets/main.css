@@ -1,6 +1,6 @@
 @font-face {
   font-family:"Rubik";
-  src: url("https://twc-italia.org/assets/fonts/rubik/Rubik-Regular.ttf") format("truetype");
+  src: url( "font/Cairo-Regular.ttf") format("truetype");
 }
 
 body {margin: 0 auto;color: white;text-align: center;width: 100%; font-family: Rubik,Arial,sans-serif;word-wrap: break-word; font-style: normal;}
