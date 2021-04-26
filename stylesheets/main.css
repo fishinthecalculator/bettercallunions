@@ -164,7 +164,7 @@ h3 {
 .redcontainer {display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center; flex: 0 1 auto}
 .negpoints {width: 70%;flex: 0 1 auto}
 .negpoints h2, .negpoints h3 {padding-left: 5%}
-.negimage {flex: 0 1 auto; width: 30%;}
+.negimage {flex: 0 1 auto; width: 30%; padding-top: 1vw}
 .negimage .image {max-width: 80%; padding-top: 200%; background-image: url("../images/occhioChiuso.svg");background-size: 100% 100%; background-repeat: no-repeat; background-position: 100% 100%; margin: 0 auto}
 
 /*Bluebox*/
