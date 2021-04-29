@@ -166,7 +166,7 @@ h4 {
   width: 50%;
   flex: 0 1 auto;
   justify-content: center;
-  align-items: center; background: #c32b1e; padding-bottom: 2%}
+  align-items: center; background: #c32b1e; padding-bottom: 2%; line-height: 45 px}
 .redcontainer {display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center; flex: 0 1 auto}
 .negpoints {width: 70%;flex: 0 1 auto}
 .negpoints h2, .negpoints h3 {padding-left: 5%}
