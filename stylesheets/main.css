@@ -9,22 +9,25 @@
 	font-family: Saul;
 	src: url(fonts/better-call-saul-normal.ttf);
 }
-
-* {
-	padding: 0;
-	margin: auto;
-	box-sizing: border-box;
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-WideBlackItalic.otf);
 }
 
-.container {
-	min-height: 100vh;
-	background-color: red;
-	background-image: url("../images/amazon.svg");
+* {
+	box-sizing: border-box;
+	margin: auto;
+	padding: 0;
+}
+
+#container {
 	background-attachment: fixed;
+	background-color: #bbbfc3;
+	background-image: url("../images/amazon.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
+	min-height: 100vh;
 	padding-top: 2.75rem;
 }
 
@@ -36,11 +39,12 @@ h2.headline,
 h3.hashtag,
 div.slogan > div:first-child,
 div.slogan > div:last-child {
+	font-family: Agrandir;
+	padding-top: 0.05rem;
+	padding: 0.65rem;
+	text-align: center;
 	text-transform: uppercase;
 	width: min-content;
-	text-align: center;
-	padding: 0.65rem;
-	padding-top: 0.05rem;
 }
 
 h2.headline,
@@ -60,24 +64,73 @@ h2.headline,
 div.slogan > div:first-child,
 div.slogan > div:last-child {
 	background-color: #ffbd59;
-  color: #41a1c7;
+	color: #41a1c7;
 }
 
 h3.hashtag {
 	background-color: #41a1c7;
-  color: #ffbd59;
-	margin-bottom: 1.25rem;
+	color: #ffbd59;
 	font-size: 1.25rem;
 	font-weight: 600;
+	margin-bottom: 1.25rem;
 }
 
 div.slogan > div:last-child {
 	border-radius: 0 0 2px 2px;
 	margin-bottom: 1.25rem;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 h1 {
-	text-shadow: 2px 2px cyan;
-	text-align: center;
 	font-family: Saul;
+	text-align: center;
+}
+
+#container .tagline {
+	width: fit-content;
+}
+#container .tagline a {
+	text-decoration: none;
+}
+
+.tagline .better-call {
+	color: #ff9800;
+	text-shadow: 4px 4px black;
+}
+
+.tagline .unions {
+	color: #41a1c7;
+	font-size: 4rem;
+	text-shadow: 6px 6px black;
+	transform: rotate(-10deg);
+}
+
+.tagline img {
+	width: 12rem;
+	margin-top: -0.75rem;
+}
+
+.btn-box {
+	cursor: pointer;
+	margin-top: 2rem;
+	width: 8.75rem;
+}
+
+.btn-box img {
+	width: 100%;
+}
+
+footer {
+	background-color: #ffbd59;
+	padding: 1rem;
+}
+
+footer p {
+	font-family: Agrandir;
+	text-align: center;
+}
+
+footer p a {
+	color: #25647c;
 }
