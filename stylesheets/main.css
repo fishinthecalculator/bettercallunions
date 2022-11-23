@@ -19,7 +19,7 @@
 .container {
 	min-height: 100vh;
 	background-color: red;
-	background-image: url("../images/amazon.svg");
+	background-image: url("../images/amazon.png");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
