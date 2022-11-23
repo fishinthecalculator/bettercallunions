@@ -1,6 +1,7 @@
 @font-face {
   font-family:"Rubik";
   src: url("https://twc-italia.org/assets/fonts/rubik/Rubik-Regular.ttf") format("truetype");
+  src: url("fonts/MervaleScript-Regular.ttf") format("truetype");
 }
 
 body {margin: 0 auto;color: white;text-align: center;width: 100%; font-family: Rubik,Arial,sans-serif;word-wrap: break-word; font-style: normal;}
@@ -46,25 +47,6 @@ h4 {
   color: #212121;
 }
 
-.header .logo {
-  background-color: none;
-  background-image: url("../images/TWC.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  float: left;
-  font-size: 1.75em;
-  line-height: 1em;
-  height: 58px;
-  margin-top: 0.25em !important;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  text-indent: -99999px;
-  width: 58px;
-  margin-left: 12px;
-}
-
 .header .work {
   font-weight: 100;
   margin-left: 1em;
@@ -78,6 +60,24 @@ h4 {
 .header .work span {
   font-weight: 600;
   color: #212121;
+}
+
+.header .work span#scuola {
+  color: #991310;
+}
+
+.header .work span#di {
+  text-transform: lowercase;
+  font-family: "MervaleScript";
+  font-style: italic;
+}
+
+.header .work span#mobilitazione {
+  color: #016aac;
+}
+
+.header .work span#sindacale {
+  color: #8c8a23;
 }
 
 .header .supporting-links {
@@ -98,11 +98,14 @@ h4 {
 }
 
 .header .supporting-links a:hover {
-  color: #E6141B;
+  color: #016aac;
 }
 
 @media screen and (max-width: 420px) {
-  /*.header .logo {
+  /*
+     FIXME: Is this even needed?
+
+    .header .logo {
     background-size: cover;
     margin-left:0.25em
   }*/
