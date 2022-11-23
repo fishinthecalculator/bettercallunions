@@ -7,7 +7,7 @@
 
 @font-face {
 	font-family: Saul;
-	src: url(../better-call-saul-normal.ttf);
+	src: url(fonts/better-call-saul-normal.ttf);
 }
 
 * {
@@ -19,11 +19,11 @@
 .container {
 	min-height: 100vh;
 	background-color: red;
-	background-image: url("../Magazziniere.png");
+	background-image: url("../images/amazon.svg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 
 	padding-top: 2.75rem;
 }
@@ -59,13 +59,13 @@ div.slogan > div:last-child {
 h2.headline,
 div.slogan > div:first-child,
 div.slogan > div:last-child {
-	background-color: yellow;
-	color: cyan;
+	background-color: #ffbd59;
+  color: #41a1c7;
 }
 
 h3.hashtag {
-	background-color: cyan;
-	color: yellow;
+	background-color: #41a1c7;
+  color: #ffbd59;
 	margin-bottom: 1.25rem;
 	font-size: 1.25rem;
 	font-weight: 600;
