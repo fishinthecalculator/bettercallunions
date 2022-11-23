@@ -1,12 +1,27 @@
 @font-face {
-  font-family:"Rubik";
+  font-family: "Rubik";
   src: url("https://twc-italia.org/assets/fonts/rubik/Rubik-Regular.ttf") format("truetype");
   src: url("fonts/MervaleScript-Regular.ttf") format("truetype");
 }
 
-body {margin: 0 auto;color: white;text-align: center;width: 100%; font-family: Rubik,Arial,sans-serif;word-wrap: break-word; font-style: normal;}
-a {color: white; text-decoration: none}
-a:hover {color: rgb(217, 217, 217);}
+body {
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-family: Rubik, Arial, sans-serif;
+  word-wrap: break-word;
+  font-style: normal;
+}
+
+a {
+  color: white;
+  text-decoration: none
+}
+
+a:hover {
+  color: rgb(217, 217, 217);
+}
 
 h1 {
   font-size: 2vw;
@@ -35,7 +50,7 @@ h4 {
 
 .header {
   position: fixed;
-  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
   width: 100%;
   background-color: white;
   z-index: 9;
@@ -43,7 +58,8 @@ h4 {
   justify-content: space-between;
 }
 
-.header .supporting-links a:visited, .header .supporting-links a:link {
+.header .supporting-links a:visited,
+.header .supporting-links a:link {
   color: #212121;
 }
 
@@ -115,21 +131,21 @@ h4 {
   .header .supporting-links {
     font-size: 1em;
     display: block;
-    text-align:right
+    text-align: right
   }
 
   .header .supporting-links li:nth-child(2) {
-    display:none
+    display: none
   }
 
   .header .supporting-links li:nth-child(1) {
-    display:none
+    display: none
   }
 }
 
 @media screen and (max-width: 915px) {
   .header .work {
-    display:none
+    display: none
   }
 }
 
@@ -145,11 +161,14 @@ h4 {
   font-weight: 300
 }
 
-.container {display: flex;
+.container {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 0 1 auto; background: linear-gradient(90deg, #c32b1e 50%, rgb(15, 120, 186) 50%);
-  width: 100%}
+  flex: 0 1 auto;
+  background: linear-gradient(90deg, #c32b1e 50%, rgb(15, 120, 186) 50%);
+  width: 100%
+}
 
 .content {
   display: flex;
@@ -157,11 +176,24 @@ h4 {
   flex-wrap: wrap;
   flex: 0 1 auto;
   width: 100%;
-  margin: 76px 0 0 0;}
+  margin: 76px 0 0 0;
+}
 
-.title {flex: 0 1 auto; width: 100%; display: flex; justify-content: center; align-items: center; padding-top: 2%}
+.title {
+  flex: 0 1 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%
+}
 
-.title h1 {background-color: white; color: #383d44; padding: 6px; border-radius: 5px}
+.title h1 {
+  background-color: white;
+  color: #383d44;
+  padding: 6px;
+  border-radius: 5px
+}
 
 /*Redbox*/
 .redbox {
@@ -169,27 +201,90 @@ h4 {
   width: 50%;
   flex: 0 1 auto;
   justify-content: center;
-  align-items: center; background: #c32b1e; padding-bottom: 2%; line-height: 45 px}
-.redcontainer {display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center; flex: 0 1 auto}
-.negpoints {width: 70%;flex: 0 1 auto}
-.negpoints h2, .negpoints h3 {padding-left: 5%}
-.negimage {flex: 0 1 auto; width: 30%; padding-top: 1vw}
-.negimage .image {max-width: 80%; padding-top: 200%; background-image: url("../images/occhioChiuso.svg");background-size: 100% 100%; background-repeat: no-repeat; background-position: 100% 100%; margin: 0 auto}
+  align-items: center;
+  background: #c32b1e;
+  padding-bottom: 2%;
+  line-height: 45 px
+}
+
+.redcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 0 1 auto
+}
+
+.negpoints {
+  width: 70%;
+  flex: 0 1 auto
+}
+
+.negpoints h2,
+.negpoints h3 {
+  padding-left: 5%
+}
+
+.negimage {
+  flex: 0 1 auto;
+  width: 30%;
+  padding-top: 1vw
+}
+
+.negimage .image {
+  max-width: 80%;
+  padding-top: 200%;
+  background-image: url("../images/occhioChiuso.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  margin: 0 auto
+}
 
 /*Bluebox*/
 .bluebox {
   padding-top: 3%;
   justify-content: center;
-  align-items: center;width: 50%;
-  flex: 0 1 auto; background: rgb(15, 120, 186); padding-bottom: 2%}
-.bluecontainer {display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center; flex: 0 1 auto}
-.pospoints {width: 70%;
-  flex: 0 1 auto; color: #fff}
-.pospoints h2, .pospoints h3 {padding-right: 5%}
-.posimage {flex: 0 1 auto;
-  width: 30%}
+  align-items: center;
+  width: 50%;
+  flex: 0 1 auto;
+  background: rgb(15, 120, 186);
+  padding-bottom: 2%
+}
 
-.posimage .image {max-width: 80%; padding-top: 200%; background-image: url("../images/occhioAperto.svg");background-size: 100% 100%;background-repeat: no-repeat; background-position: 100% 100%; margin: 0 auto}
+.bluecontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 0 1 auto
+}
+
+.pospoints {
+  width: 70%;
+  flex: 0 1 auto;
+  color: #fff
+}
+
+.pospoints h2,
+.pospoints h3 {
+  padding-right: 5%
+}
+
+.posimage {
+  flex: 0 1 auto;
+  width: 30%
+}
+
+.posimage .image {
+  max-width: 80%;
+  padding-top: 200%;
+  background-image: url("../images/occhioAperto.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  margin: 0 auto
+}
 
 
 .pospoints div,
@@ -199,28 +294,61 @@ h4 {
 }
 
 /*Joinbox*/
-.joincontainer {display: flex;
+.joincontainer {
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;width: 70%}
-.joinbox {display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;justify-content: center;
-  align-items: center;width: 100%; flex: 0 1 auto; position: relative; background: linear-gradient(90deg, #c32b1e 50%, rgb(15, 120, 186) 50%); padding-bottom: 8%}
-.joinpoints {flex: 0 1 auto;
-  width: 100%; background-color: white; border-radius: 0 0 5px 5px; padding: 15px}
-
-.joinmessage {width: 100%;
-  background-color: #383d44; flex: 0 1 auto; border-radius: 5px 5px 0 0;
+  flex-wrap: wrap;
+  width: 70%
 }
-.joinmessage h2 {text-align: center; margin: 3%}
 
-.joinpoints .dot {height: 8px;
-  width: 8px;top: 0;margin: 0 1% 0 0;background-color: #383d44;
-  border-radius: 50%;display: inline-block;position: relative}
+.joinbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 0 1 auto;
+  position: relative;
+  background: linear-gradient(90deg, #c32b1e 50%, rgb(15, 120, 186) 50%);
+  padding-bottom: 8%
+}
+
+.joinpoints {
+  flex: 0 1 auto;
+  width: 100%;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  padding: 15px
+}
+
+.joinmessage {
+  width: 100%;
+  background-color: #383d44;
+  flex: 0 1 auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.joinmessage h2 {
+  text-align: center;
+  margin: 3%
+}
+
+.joinpoints .dot {
+  height: 8px;
+  width: 8px;
+  top: 0;
+  margin: 0 1% 0 0;
+  background-color: #383d44;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative
+}
+
 .joinpoints h3 {
   text-align: center;
   margin: 0.2em 0;
-  padding-left:1%;
+  padding-left: 1%;
   color: #383d44;
   font-size: 1.3vw
 }
@@ -257,7 +385,7 @@ h4 {
 
 .joinbutton h2 {
   padding: 10px 10px;
-  color:#FFF ;
+  color: #FFF;
   background: #434a54;
   border-radius: 8px;
   text-shadow: 1px 1px #111314;
@@ -282,7 +410,7 @@ h4 {
 
 /*Footer*/
 footer {
-  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
   background-color: white;
   position: fixed;
   bottom: 0;
@@ -325,7 +453,7 @@ footer a {
 
 @media screen and (max-width: 420px) {
   footer .columns {
-    display:block
+    display: block
   }
 }
 
@@ -333,11 +461,11 @@ footer a {
   footer {
     position: relative;
     box-shadow: none;
-    border-top:1px #212121 solid
+    border-top: 1px #212121 solid
   }
 
   footer ul {
-    padding-left:1em
+    padding-left: 1em
   }
 }
 
@@ -361,11 +489,13 @@ footer a {
     background: #c32b1e;
   }
 
-  .redbox, .bluebox {
+  .redbox,
+  .bluebox {
     width: 100%;
   }
 
-  .negimage .image, .posimage .image {
+  .negimage .image,
+  .posimage .image {
     padding-top: 100%;
     background-size: 100% 100%;
 
@@ -406,23 +536,24 @@ footer a {
 .mobilenegimage {
   display: none
 }
+
 .mobileposimage {
   display: none;
 }
+
 .mobilepospoints {
   display: none
 }
+
 .mobilenegpoints {
   display: none
 }
 
 @media screen and (max-width: 700px) {
 
-  body {-webkit-overflow-scrolling: touch;
-    padding-top: 14px env(safe-area-inset-top)
-    padding-left: 14px env(safe-area-inset-left)
-    padding-right: 14px env(safe-area-inset-right)
-    padding-bottom: 14px env(safe-area-inset-bottom)
+  body {
+    -webkit-overflow-scrolling: touch;
+    padding-top: 14px env(safe-area-inset-top) padding-left: 14px env(safe-area-inset-left) padding-right: 14px env(safe-area-inset-right) padding-bottom: 14px env(safe-area-inset-bottom)
   }
 
   h2 {
@@ -451,7 +582,10 @@ footer a {
     transition: 2s;
   }
 
-  .redbox,.bluebox,.joinbox,.title {
+  .redbox,
+  .bluebox,
+  .joinbox,
+  .title {
     display: none;
   }
 
@@ -465,7 +599,8 @@ footer a {
     transition: 2s;
   }
 
-  .mobilenegimage .image, #neg:target .mobilenegimage .image{
+  .mobilenegimage .image,
+  #neg:target .mobilenegimage .image {
     width: 70%;
     padding-top: 100%;
     background-image: url("../images/occhioChiuso.svg");
@@ -476,11 +611,12 @@ footer a {
     margin: 0 auto;
   }
 
-  #pos:target .mobilenegimage .image{
+  #pos:target .mobilenegimage .image {
     background-image: url("../images/occhioAperto.svg");
   }
 
-  .mobileposimage, #neg:target .mobileposimage {
+  .mobileposimage,
+  #neg:target .mobileposimage {
     margin: 4% 1% 0 1%;
     padding-bottom: 3%;
     display: flex;
@@ -496,7 +632,8 @@ footer a {
     background: #c32b1e;
   }
 
-  .mobileposimage .image, #neg:target .mobileposimage .image {
+  .mobileposimage .image,
+  #neg:target .mobileposimage .image {
     width: 70%;
     padding-top: 100%;
     background-image: url("../images/occhioAperto.svg");
@@ -511,7 +648,8 @@ footer a {
     background-image: url("../images/occhioChiuso.svg");
   }
 
-  .mobileposimage .buttonpos, #neg:target .mobileposimage .buttonpos {
+  .mobileposimage .buttonpos,
+  #neg:target .mobileposimage .buttonpos {
     height: auto;
     flex: 0 1 auto;
     border-radius: 5px;
@@ -523,7 +661,8 @@ footer a {
     display: none;
   }
 
-  .mobileposimage .buttonneg, #neg:target .mobileposimage .buttonneg {
+  .mobileposimage .buttonneg,
+  #neg:target .mobileposimage .buttonneg {
     height: auto;
     flex: 0 1 auto;
     border-radius: 5px;
@@ -546,7 +685,7 @@ footer a {
     -webkit-box-shadow: 2px 2px 0 2px rgba(14, 96, 139, 1);
     -moz-box-shadow: 2px 2px 0 2px rgba(14, 96, 139, 1);
     box-shadow: 2px 2px 0 2px rgba(14, 96, 139, 1);
-    border: 1px solid rgb(17,99,142);
+    border: 1px solid rgb(17, 99, 142);
   }
 
   .mobileposimage .buttonneg h2 {
@@ -563,7 +702,8 @@ footer a {
     border: 1px solid #98251b;
   }
 
-  .mobilenegpoints, #neg:target .mobilenegpoints {
+  .mobilenegpoints,
+  #neg:target .mobilenegpoints {
     display: flex;
     width: 90%;
     margin: 0 auto;
@@ -585,7 +725,8 @@ footer a {
     transition: 2s;
   }
 
-  .mobilepospoints, #neg:target .mobilepospoints {
+  .mobilepospoints,
+  #neg:target .mobilepospoints {
     width: 90%;
     margin: 0 auto;
     flex: 0 1 auto;
@@ -614,7 +755,10 @@ footer a {
 }
 
 @media screen and (max-width: 420px) {
-  .mobilepospoints, .mobilenegpoints, .joinbox {
+
+  .mobilepospoints,
+  .mobilenegpoints,
+  .joinbox {
     padding-bottom: 4% !important;
   }
 
@@ -649,6 +793,7 @@ footer a {
   width: auto;
   flex: 0 1 auto;
 }
+
 .modal-container button {
   display: block;
   color: #383d44;
@@ -656,6 +801,7 @@ footer a {
   border: 0;
 
 }
+
 .modal-container .modal-backdrop {
   height: 0;
   width: 0;
@@ -663,6 +809,7 @@ footer a {
   overflow: hidden;
   transition: opacity 0.2s ease-in;
 }
+
 .modal-container #modal-toggle {
   position: absolute;
   left: 0;
@@ -673,7 +820,12 @@ footer a {
   opacity: 0;
   cursor: pointer;
 }
-.modal-container #modal-toggle:hover ~ button { background: none;color: rgb(219, 219, 219); }
+
+.modal-container #modal-toggle:hover~button {
+  background: none;
+  color: rgb(219, 219, 219);
+}
+
 .modal-container #modal-toggle:checked {
   width: 100vw;
   height: 100vh;
@@ -683,7 +835,8 @@ footer a {
   z-index: 9;
   opacity: 0;
 }
-.modal-container #modal-toggle:checked ~ .modal-backdrop {
+
+.modal-container #modal-toggle:checked~.modal-backdrop {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100vw;
   height: 100vh;
@@ -694,7 +847,8 @@ footer a {
   pointer-events: none;
   opacity: 1;
 }
-.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content {
   background-color: #fff;
   max-width: 500px;
   width: 100%;
@@ -704,10 +858,13 @@ footer a {
   border-radius: 5px;
   z-index: 999;
   pointer-events: auto;
-  cursor: auto;color: black;text-align: center;
+  cursor: auto;
+  color: black;
+  text-align: center;
 
 }
-.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close {
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content .modal-close {
   color: #666;
   position: absolute;
   right: 2px;
@@ -718,7 +875,8 @@ footer a {
   text-align: center;
   cursor: pointer;
 }
-.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close.button {
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content .modal-close.button {
   top: initial;
   bottom: 20px;
   right: 20px;
@@ -727,15 +885,23 @@ footer a {
   width: 50px;
   border-radius: 2px;
   font-size: 14px;
-  font-weight: normal;display: none;
+  font-weight: normal;
+  display: none;
 }
-.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close.button:hover {
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content .modal-close.button:hover {
   color: #fff;
   background: #1E824C;
 }
-.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close:hover { color: #333; }
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content .modal-close:hover {
+  color: #333;
+}
 
 @media (max-width: 500px) {
 
-  .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content { left: 0; border-radius: 0}
+  .modal-container #modal-toggle:checked~.modal-backdrop .modal-content {
+    left: 0;
+    border-radius: 0
+  }
 }
