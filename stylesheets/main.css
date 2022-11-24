@@ -216,7 +216,6 @@ footer a {
 
 .logo-box {
 	cursor: pointer;
-	margin-top: 2rem;
 	width: 20rem;
 }
 
@@ -243,5 +242,49 @@ footer a {
 
 	100% {
 		margin-bottom: 1px;
+	}
+}
+
+/* Mediaquery */
+@media screen and (max-width: 600px) {
+	h2.headline,
+	div.slogan > div:first-child,
+	div.slogan > div:last-child {
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 2rem;
+	}
+
+	footer {
+		background-color: #ffbd59;
+		padding: 2rem 2.25rem;
+	}
+
+	footer p,
+	footer a {
+		font-family: Agrandir;
+		line-height: 1.5rem;
+		font-size: 1rem;
+		font-weight: 600;
+		text-align: center;
+		word-spacing: 0.05rem;
+	}
+
+	.logo-box {
+		width: 10rem;
+	}
+
+	.tagline .better-call {
+		font-size: 2.5rem;
+		margin-left: 1rem;
+	}
+
+	.tagline .better-call :last-child {
+		margin-top: -12.5px;
+	}
+	
+	.tagline .unions {
+		font-size: 4rem;
+		margin-top: -20px;
 	}
 }
