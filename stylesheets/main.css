@@ -20,15 +20,22 @@
 	padding: 0;
 }
 
-#container {
+.container {
 	background-attachment: fixed;
 	background-color: #bbbfc3;
-	background-image: url("../images/amazon.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100vh;
 	padding-top: 2.75rem;
+}
+
+.container#logistica {
+  background-image: url("../images/amazon.png");
+}
+
+.container#cultura {
+  background-image: url("../images/netflix.png");
 }
 
 h2.headline {
@@ -60,19 +67,34 @@ div.slogan > div:last-child {
 	font-weight: 700;
 }
 
-h2.headline,
-div.slogan > div:first-child,
-div.slogan > div:last-child {
-	background-color: #ffbd59;
-	color: #41a1c7;
+.container#logistica h2.headline,
+.container#logistica div.slogan > div:first-child,
+.container#logistica div.slogan > div:last-child {
+	background-color: #ffffff;
+	color: #102832;
+}
+
+.container#cultura h2.headline,
+.container#cultura div.slogan > div:first-child,
+.container#cultura div.slogan > div:last-child {
+	background-color: #ffffff;
+	color: #102832;
 }
 
 h3.hashtag {
-	background-color: #41a1c7;
-	color: #ffbd59;
 	font-size: 1.25rem;
 	font-weight: 600;
 	margin-bottom: 1.25rem;
+}
+
+.container#logistica h3.hashtag {
+	background-color: #41a1c7;
+	color: #ffbd59;
+}
+
+.container#cultura h3.hashtag {
+	background-color: #ffffff;
+	color: #102832;
 }
 
 div.slogan > div:last-child {
@@ -87,23 +109,37 @@ h1 {
 	text-align: center;
 }
 
-#container .tagline {
+.container .tagline {
 	width: fit-content;
 }
-#container .tagline a {
+.container .tagline a {
 	text-decoration: none;
 }
 
 .tagline .better-call {
-	color: #ff9800;
 	text-shadow: 4px 4px black;
 }
 
 .tagline .unions {
-	color: #41a1c7;
 	font-size: 4rem;
 	text-shadow: 6px 6px black;
 	transform: rotate(-10deg);
+}
+
+.container#logistica .tagline .better-call {
+	color: #ff9800;
+}
+
+.container#logistica .tagline .unions {
+	color: #41a1c7;
+}
+
+.container#cultura .tagline .better-call {
+	color: #ffffff;
+}
+
+.container#cultura .tagline .unions {
+	color: #bb0f0f;
 }
 
 .tagline img {
@@ -122,8 +158,15 @@ h1 {
 }
 
 footer {
-	background-color: #ffbd59;
 	padding: 1rem;
+}
+
+footer#logistica {
+	background-color: #ffbd59;
+}
+
+footer#cultura {
+  background-color: #ffffff;
 }
 
 footer p {
@@ -131,6 +174,10 @@ footer p {
 	text-align: center;
 }
 
-footer p a {
+footer#logistica p a {
 	color: #25647c;
+}
+
+footer#cultura p a {
+	color: #102832;
 }

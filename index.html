@@ -21,17 +21,47 @@
     <meta property="og:height" content="256">
     <meta property="og:width" content="256">
 
+    <script>
+        window.onload = () => {
+            const ids = ["logistica", "cultura"];
+            const randomId = ids[Math.floor(Math.random() * ids.length)];
+            // set visible by id
+            document.getElementById(randomId).style.display = 'block';
+            // set footer id
+            document.querySelector('footer').id = randomId;
+        }
+    </script>
+
 </head>
 
 <body>
 
-	<div id="container">
+	<div id="logistica" class="container" style="display: none;">
 
 		<h2 class="headline">Offertissima!</h2>
 		<h3 class="hashtag">#Blackfriday</h3>
 		<div class="slogan">
 			<div>Lavori 10 ore pagate</div>
 			<div>8!</div>
+		</div>
+		<div class="tagline">
+			<a href="http://">
+				<h1>
+					<div class="better-call">BETTER <br> CALL</div>
+					<div class="unions">Unions</div> <img src="./images/smile.png" alt="sorriso falso">
+				</h1>
+			</a>
+
+		</div>
+
+	</div>
+
+    <div id="cultura" class="container" style="display: none;">
+
+		<h2 class="headline">Imperdibile!</h2>
+		<h3 class="hashtag">#Blackfriday</h3>
+		<div class="slogan">
+			<div>Lavoratori della cultura a costo zero</div>
 		</div>
 		<div class="tagline">
 			<a href="http://">
