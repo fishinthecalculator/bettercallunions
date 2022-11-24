@@ -38,6 +38,10 @@
   background-image: url("../images/netflix.png");
 }
 
+.container#stagisti {
+  background-image: url("../images/meta.svg");
+}
+
 h2.headline {
 	margin-bottom: 0.25rem;
 }
@@ -81,6 +85,13 @@ div.slogan > div:last-child {
 	color: #102832;
 }
 
+.container#stagisti h2.headline,
+.container#stagisti div.slogan > div:first-child,
+.container#stagisti div.slogan > div:last-child {
+	background-color: #ffffff;
+	color: #0568e1;
+}
+
 h3.hashtag {
 	font-size: 1.25rem;
 	font-weight: 600;
@@ -95,6 +106,11 @@ h3.hashtag {
 .container#cultura h3.hashtag {
 	background-color: #ffffff;
 	color: #102832;
+}
+
+.container#stagisti h3.hashtag {
+	background-color: #ffffff;
+	color: #0568e1;
 }
 
 div.slogan > div:last-child {
@@ -142,6 +158,14 @@ h1 {
 	color: #bb0f0f;
 }
 
+.container#stagisti .tagline .better-call {
+	color: #ffffff;
+}
+
+.container#stagisti .tagline .unions {
+	color: #0568e1;
+}
+
 .tagline img {
 	width: 12rem;
 	margin-top: -0.75rem;
@@ -169,6 +193,10 @@ footer#cultura {
   background-color: #ffffff;
 }
 
+footer#stagisti {
+  background-color: #ffffff;
+}
+
 footer p {
 	font-family: Agrandir;
 	text-align: center;
@@ -180,4 +208,8 @@ footer#logistica p a {
 
 footer#cultura p a {
 	color: #102832;
+}
+
+footer#cultura p a {
+	color: #0568e1;
 }
