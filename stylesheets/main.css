@@ -1,10 +1,7 @@
-/* @font-face {
-	font-family: "Rubik";
-	src: url("https://twc-italia.org/assets/fonts/rubik/Rubik-Regular.ttf")
-		format("truetype");
-	src: url("fonts/MervaleScript-Regular.ttf") format("truetype");
-} */
-
+@font-face {
+	font-family: Rubik;
+	src: url(fonts/Rubik-Regular.ttf);
+}
 @font-face {
 	font-family: Saul;
 	src: url(fonts/better-call-saul-normal.ttf);
@@ -12,6 +9,56 @@
 @font-face {
 	font-family: Agrandir;
 	src: url(fonts/Agrandir-WideBlackItalic.otf);
+	font-weight: 800;
+	font-style: italic;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-GrandHeavy.otf);
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-TextBold.otf);
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-Tight.otf);
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-Narrow.otf);
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-Regular.otf);
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-WideLight.otf);
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-ThinItalic.otf);
+	font-weight: 100;
+	font-style: italic;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-GrandLight.otf);
+	font-weight: 100;
+	font-style: normal;
 }
 
 * {
@@ -40,6 +87,7 @@ h3.hashtag,
 div.slogan > div:first-child,
 div.slogan > div:last-child {
 	font-family: Agrandir;
+	font-weight: 700;
 	padding-top: 0.05rem;
 	padding: 0.65rem;
 	text-align: center;
@@ -123,12 +171,16 @@ h1 {
 
 footer {
 	background-color: #ffbd59;
-	padding: 1rem;
+	padding: 2.75rem 6.25rem;
 }
 
 footer p {
 	font-family: Agrandir;
+	font-size: 1.35rem;
+	font-weight: 600;
+	line-height: 1.85rem;
 	text-align: center;
+	word-spacing: 0.05rem;
 }
 
 footer p a {
