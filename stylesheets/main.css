@@ -1,10 +1,8 @@
-/* @font-face {
-	font-family: "Rubik";
-	src: url("https://twc-italia.org/assets/fonts/rubik/Rubik-Regular.ttf")
-		format("truetype");
-	src: url("fonts/MervaleScript-Regular.ttf") format("truetype");
-} */
-
+/* Fonts */
+@font-face {
+	font-family: Rubik;
+	src: url(fonts/Rubik-Regular.ttf);
+}
 @font-face {
 	font-family: Saul;
 	src: url(fonts/better-call-saul-normal.ttf);
@@ -12,15 +10,67 @@
 @font-face {
 	font-family: Agrandir;
 	src: url(fonts/Agrandir-WideBlackItalic.otf);
+	font-weight: 800;
+	font-style: italic;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-GrandHeavy.otf);
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-TextBold.otf);
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-Tight.otf);
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-Narrow.otf);
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-Regular.otf);
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-WideLight.otf);
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-ThinItalic.otf);
+	font-weight: 100;
+	font-style: italic;
+}
+@font-face {
+	font-family: Agrandir;
+	src: url(fonts/Agrandir-GrandLight.otf);
+	font-weight: 100;
+	font-style: normal;
 }
 
+/* Reset */
 * {
 	box-sizing: border-box;
 	margin: auto;
 	padding: 0;
 }
 
-#container {
+/* Main */
+.container {
 	background-attachment: fixed;
 	background-color: #bbbfc3;
 	background-image: url("../images/amazon.png");
@@ -28,7 +78,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100vh;
-	padding-top: 2.75rem;
+	padding-top: 5rem;
+	position: relative;
 }
 
 h2.headline {
@@ -40,8 +91,8 @@ h3.hashtag,
 div.slogan > div:first-child,
 div.slogan > div:last-child {
 	font-family: Agrandir;
-	padding-top: 0.05rem;
-	padding: 0.65rem;
+	font-weight: 700;
+	padding: 0.05rem 1.25rem 0.05rem 1.25rem;
 	text-align: center;
 	text-transform: uppercase;
 	width: min-content;
@@ -56,8 +107,9 @@ div.slogan > div:first-child {
 h2.headline,
 div.slogan > div:first-child,
 div.slogan > div:last-child {
-	font-size: 2rem;
+	font-size: 3rem;
 	font-weight: 700;
+	line-height: 4.75rem;
 }
 
 h2.headline,
@@ -70,16 +122,16 @@ div.slogan > div:last-child {
 h3.hashtag {
 	background-color: #41a1c7;
 	color: #ffbd59;
-	font-size: 1.25rem;
+	font-size: 1.75rem;
 	font-weight: 600;
 	margin-bottom: 1.25rem;
 }
 
 div.slogan > div:last-child {
 	border-radius: 0 0 2px 2px;
-	margin-bottom: 1.25rem;
-	padding-top: 0;
+	margin-bottom: 2rem;
 	padding-bottom: 0;
+	padding-top: 0;
 }
 
 h1 {
@@ -87,50 +139,152 @@ h1 {
 	text-align: center;
 }
 
-#container .tagline {
+.container .tagline {
 	width: fit-content;
 }
-#container .tagline a {
+
+.container .tagline a {
 	text-decoration: none;
 }
 
 .tagline .better-call {
 	color: #ff9800;
+	font-size: 3.5rem;
+	margin-left: 0;
 	text-shadow: 4px 4px black;
+	width: fit-content;
+}
+
+.tagline .better-call :last-child {
+	width: min-content;
+	margin-left: auto;
+	margin-right: 0;
+	margin-top: -20px;
 }
 
 .tagline .unions {
 	color: #41a1c7;
-	font-size: 4rem;
+	font-size: 5rem;
+	margin-top: -25px;
 	text-shadow: 6px 6px black;
 	transform: rotate(-10deg);
 }
 
-.tagline img {
-	width: 12rem;
-	margin-top: -0.75rem;
+.tagline .smile-box {
+	width: 15rem;
+	margin-top: -1.25rem;
 }
 
-.btn-box {
-	cursor: pointer;
-	margin-top: 2rem;
-	width: 8.75rem;
-}
-
-.btn-box img {
+.tagline .smile-box img {
 	width: 100%;
 }
 
+/* down arrow */
+.go-down-btn {
+	bottom: 10px;
+	position: absolute;
+	right: 10px;
+	width: 40px;
+}
+
+.go-down-btn img {
+	width: 100%;
+}
+
+/* Footer */
 footer {
 	background-color: #ffbd59;
-	padding: 1rem;
+	padding: 2.75rem 6.25rem;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
-footer p {
+footer p,
+footer a {
 	font-family: Agrandir;
+	line-height: 1.85rem;
+	font-size: 1.35rem;
+	font-weight: 600;
 	text-align: center;
+	word-spacing: 0.05rem;
 }
 
-footer p a {
+footer a {
 	color: #25647c;
+}
+
+.logo-box {
+	cursor: pointer;
+	width: 20rem;
+}
+
+.logo-box img {
+	width: 100%;
+}
+
+/* Animation */
+.attract {
+	animation-name: bounce;
+	animation-duration: 0.9s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+	0% {
+		margin-bottom: 0;
+	}
+
+	50% {
+		margin-bottom: 10px;
+	}
+
+	100% {
+		margin-bottom: 1px;
+	}
+}
+
+/* Mediaquery */
+@media screen and (max-width: 600px) {
+	h2.headline,
+	div.slogan > div:first-child,
+	div.slogan > div:last-child {
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 2rem;
+	}
+
+	footer {
+		background-color: #ffbd59;
+		padding: 2rem 2.25rem;
+	}
+
+	footer p,
+	footer a {
+		font-family: Agrandir;
+		line-height: 1.5rem;
+		font-size: 1rem;
+		font-weight: 600;
+		text-align: center;
+		word-spacing: 0.05rem;
+	}
+
+	.logo-box {
+		width: 10rem;
+	}
+
+	.tagline .better-call {
+		font-size: 2.5rem;
+		margin-left: 1rem;
+	}
+
+	.tagline .better-call :last-child {
+		margin-top: -12.5px;
+	}
+	
+	.tagline .unions {
+		font-size: 4rem;
+		margin-top: -20px;
+	}
 }
