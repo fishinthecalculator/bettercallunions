@@ -70,7 +70,7 @@
 }
 
 /* Main */
-#container {
+.container {
 	background-attachment: fixed;
 	background-color: #bbbfc3;
 	background-image: url("../images/amazon.png");
@@ -139,11 +139,11 @@ h1 {
 	text-align: center;
 }
 
-#container .tagline {
+.container .tagline {
 	width: fit-content;
 }
 
-#container .tagline a {
+.container .tagline a {
 	text-decoration: none;
 }
 
