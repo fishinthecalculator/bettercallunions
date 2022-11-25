@@ -2,16 +2,16 @@
 <html lang="it">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="stylesheets/main.css">
-    <title>#BLACKFRIDAY</title>
-    <meta property="twitter:image:src" content="https://blackfriday.scuolasindacale.org/images/opengraph_small.jpg">
-    <meta itemprop="image" content="https://blackfriday.scuolasindacale.org/images/opengraph_small.jpg">
-    <meta property="og:title" content="#BLACKFRIDAY">
-    <meta property="og:description"
-        content="Per chi ti paga il tuo lavoro è merce e il suo Black Friday dura da tempo. C'è bisogno di un 'noi'.">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="stylesheets/main.css">
+	<title>#BLACKFRIDAY</title>
+	<meta property="twitter:image:src" content="https://blackfriday.scuolasindacale.org/images/opengraph_small.jpg">
+	<meta itemprop="image" content="https://blackfriday.scuolasindacale.org/images/opengraph_small.jpg">
+	<meta property="og:title" content="#BLACKFRIDAY">
+	<meta property="og:description"
+		content="Per chi ti paga il tuo lavoro è merce e il suo Black Friday dura da tempo. C'è bisogno di un 'noi'.">
 
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://blackfriday.scuolasindacale.org/images/opengraph.jpg">
@@ -78,21 +78,25 @@
 	</footer>
 
 	<script>
-		// Smooth scroll
-		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-			anchor.addEventListener('click', function (e) {
-				e.preventDefault();
+		document.addEventListener("DOMContentLoaded", () => {
+			console.log('DOM loaded');
 
-				document.querySelector(this.getAttribute('href')).scrollIntoView({
-					behavior: 'smooth'
+			// Smooth scroll
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+
+					document.querySelector(this.getAttribute('href')).scrollIntoView({
+						behavior: 'smooth'
+					});
 				});
 			});
-		});
 
-		// Check viewport size
-		window.addEventListener('resize', () => {
-			let vh = window.innerHeight * 0.01;
-			document.documentElement.style.setProperty('--vh', `${vh}px`);
+			// Check viewport size
+			window.addEventListener('resize', () => {
+				let vh = window.innerHeight * 0.01;
+				document.documentElement.style.setProperty('--vh', `${vh}px`);
+			});
 		});
 	</script>
 
