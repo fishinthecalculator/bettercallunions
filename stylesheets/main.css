@@ -81,8 +81,9 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
-	height: calc(var(--vh, 1vh) * 100);
+	height: auto;
+	min-height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
 	padding-top: 5rem;
 	position: relative;
 }
@@ -199,10 +200,11 @@ h1 {
 /* Footer */
 footer {
 	background-color: #ffbd59;
-	padding: 2.75rem 6.25rem;
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	height: auto;
+	min-height: 100vh;
+	padding: 2.75rem 6.25rem;
 }
 
 footer p,
@@ -268,6 +270,7 @@ footer a {
 
 	footer {
 		padding: 1rem 3rem;
+		padding-bottom: 4rem;
 	}
 
 	footer p,
