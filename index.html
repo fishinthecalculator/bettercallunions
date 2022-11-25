@@ -77,7 +77,24 @@
 		</div>
 	</footer>
 
+	<script>
+		// Smooth scroll
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
 
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+
+		// Check viewport size
+		window.addEventListener('resize', () => {
+			let vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+		});
+	</script>
 
 </body>
 
